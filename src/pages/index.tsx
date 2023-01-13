@@ -1,9 +1,5 @@
-import Header from './../components/layout/Header';
+import Home from '@/containers/Home';
 
-export default function Home() {
-  return (
-    <div>
-      <Header />
-    </div>
-  );
+export default function index() {
+  return <Home />;
 }

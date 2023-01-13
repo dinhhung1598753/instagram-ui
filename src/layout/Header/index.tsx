@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import Search from './search';
+import { Avatar } from '@/components';
 
 interface HeaderProps {}
 
 const Header = () => {
+  const avtSrc = '/assets/avatars/thuy-tien-avt.jpeg';
   return (
-    <div className="h-[60px] w-full border flex flex-col items-center justify-center fixed">
+    <div className="h-[60px] w-full border flex flex-col items-center justify-center fixed top-0 bg-white">
       <div className="flex max-w-[980px] w-full">
         <div className="flex-[1_0_127px]">
           <div className="mt-2">
@@ -35,6 +37,9 @@ const Header = () => {
           </div>
           <div className="ml-6">
             <Image src="/assets/icons/heart.svg" width="24" height="24" alt="heart" />
+          </div>
+          <div className="ml-6">
+            <Avatar src={avtSrc} alt="avt" size={24} />
           </div>
         </div>
       </div>

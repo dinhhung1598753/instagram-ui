@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { Input, Button } from '../../components/app';
+import { Input, Button } from '@/components';
 
 const footerButtons = [
   'Meta',
