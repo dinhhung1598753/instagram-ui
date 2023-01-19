@@ -1,8 +1,10 @@
 import Image from 'next/image';
-interface StoryProps {}
+interface StoryProps {
+  name: string;
+  avatar: string;
+}
 
-const Story = () => {
-  const imageSrc = '/assets/avatars/avt.jpeg';
+const Story = (props: StoryProps) => {
   return (
     <div>
       <div>
@@ -11,16 +13,16 @@ const Story = () => {
             <div className="p-0.5 rounded-full bg-white">
               <Image
                 className="rounded-full"
-                src={imageSrc}
-                height="64"
-                width="64"
+                src={props.avatar}
+                height="56"
+                width="56"
                 alt="user avatar"
               />
             </div>
           </div>
         </div>
         <div className="text-center text-xs pt-1">
-          <span>name</span>
+          <span>{props.name}</span>
         </div>
       </div>
     </div>
