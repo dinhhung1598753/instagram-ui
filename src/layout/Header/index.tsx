@@ -16,6 +16,7 @@ const Header = () => {
               width="103"
               height="29"
               alt="instagram-logo"
+              className="pointer"
             />
           </div>
         </div>
@@ -24,19 +25,49 @@ const Header = () => {
         </div>
         <div className="flex  flex-[1_0_127px] items-center justify-end">
           <div>
-            <Image src="/assets/icons/home.svg" width="24" height="24" alt="home" />
+            <Image
+              src="/assets/icons/home.svg"
+              width="24"
+              height="24"
+              alt="home"
+              className="pointer"
+            />
           </div>
           <div className="ml-6">
-            <Image src="/assets/icons/messenger.svg" width="24" height="24" alt="messenger" />
+            <Image
+              src="/assets/icons/messenger.svg"
+              width="24"
+              height="24"
+              alt="messenger"
+              className="pointer"
+            />
           </div>
           <div className="ml-6">
-            <Image src="/assets/icons/plus-outline.svg" width="24" height="24" alt="plus" />
+            <Image
+              src="/assets/icons/plus-outline.svg"
+              width="24"
+              height="24"
+              alt="plus"
+              className="pointer"
+            />
           </div>
           <div className="ml-6">
-            <Image src="/assets/icons/find.svg" width="24" height="24" alt="find" />
+            <Image
+              src="/assets/icons/find.svg"
+              width="24"
+              height="24"
+              alt="find"
+              className="pointer"
+            />
           </div>
           <div className="ml-6">
-            <Image src="/assets/icons/heart.svg" width="24" height="24" alt="heart" />
+            <Image
+              src="/assets/icons/heart.svg"
+              width="24"
+              height="24"
+              alt="heart"
+              className="pointer"
+            />
           </div>
           <div className="ml-6">
             <Avatar src={avtSrc} alt="avt" size={24} />

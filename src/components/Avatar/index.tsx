@@ -13,7 +13,7 @@ const Avatar = (props: AvatarProps) => {
     : '';
   return (
     <div className={classes}>
-      <div className="p-0.5 rounded-full bg-white">
+      <div className="p-0.5 rounded-full bg-white pointer">
         <Image
           className="rounded-full"
           src={props.src}

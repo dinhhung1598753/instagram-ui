@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .pointer {
+    @apply hover:cursor-pointer;
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

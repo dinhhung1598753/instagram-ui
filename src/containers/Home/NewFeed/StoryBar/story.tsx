@@ -7,7 +7,7 @@ interface StoryProps {
 const Story = (props: StoryProps) => {
   return (
     <div>
-      <div>
+      <div className="pointer">
         <div>
           <div className="bg-gradient-to-tr from-yellow-400 to-fuchsia-600 rounded-full p-0.5">
             <div className="p-0.5 rounded-full bg-white">

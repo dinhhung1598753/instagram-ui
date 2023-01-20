@@ -1,25 +1,31 @@
 import Image from 'next/image';
 import { Avatar } from '@/components';
+import { Post } from '@/types';
 
-const Post = () => {
+const Post = (props: Post) => {
   const avtSrc = '/assets/avatars/thuy-tien-avt.jpeg';
   return (
     <div className="w-[472px] border rounded-md">
       <div className="w-full h-[56px] flex justify-between">
         <div className="flex items-center ml-3">
-          <div>
-            <Avatar src={avtSrc} alt="avt" size={32} hasStory />
+          <div className="pointer">
+            <Avatar
+              src={props.author.avatar}
+              alt="avt"
+              size={32}
+              hasStory={props.author.hasStory}
+            />
           </div>
           <div className="ml-2">
-            <div className="text-sm font-medium">
-              <span>tienng12</span>
+            <div className="text-sm font-medium pointer">
+              <span>{props.author.name}</span>
             </div>
             <div className="text-xs font-light">
-              <span>Bangkok</span>
+              <span>{props.location}</span>
             </div>
           </div>
         </div>
-        <div className="flex items-center mr-1">
+        <div className="flex items-center mr-1 pointer">
           <div className="p-2">
             <Image src="assets/icons/action.svg" width="20" height="20" alt="More action" />
           </div>
@@ -27,23 +33,47 @@ const Post = () => {
       </div>
       <div>
         <div>
-          <img src="/assets/posts/thuy-tien-1.jpeg" alt="post" />
+          <img src={props.image} alt="post" />
         </div>
       </div>
       <div>
         <div>
           <div className="flex">
             <div className="p-2 mt-1">
-              <Image src="assets/icons/like.svg" width="24" height="24" alt="Like" />
+              <Image
+                src="assets/icons/like.svg"
+                width="24"
+                height="24"
+                alt="Like"
+                className="pointer"
+              />
             </div>
             <div className="p-2 mt-1">
-              <Image src="assets/icons/message.svg" width="24" height="24" alt="Message" />
+              <Image
+                src="assets/icons/message.svg"
+                width="24"
+                height="24"
+                alt="Message"
+                className="pointer"
+              />
             </div>
             <div className="p-2 mt-1">
-              <Image src="assets/icons/share.svg" width="24" height="24" alt="Share" />
+              <Image
+                src="assets/icons/share.svg"
+                width="24"
+                height="24"
+                alt="Share"
+                className="pointer"
+              />
             </div>
             <div className="grow flex justify-end p-2 mt-1">
-              <Image src="assets/icons/save.svg" width="24" height="24" alt="Save" />
+              <Image
+                src="assets/icons/save.svg"
+                width="24"
+                height="24"
+                alt="Save"
+                className="pointer"
+              />
             </div>
           </div>
 
@@ -53,8 +83,8 @@ const Post = () => {
           <div className="px-2">
             <div className="flex flex-col">
               <div className="text-sm">
-                <span className="font-semibold">sunnie.tr </span>
-                <span>thank @dottie.store for this pretty gift, a stunning dress ✨</span>
+                <span className="font-semibold pointer">{props.author.name} </span>
+                <span>{props.title}</span>
               </div>
             </div>
           </div>
@@ -73,7 +103,7 @@ const Post = () => {
                   <span className="text-gray-300 text-sm">Add a comment</span>
                 </div>
                 <div className="opacity-50">
-                  <span className="font-semibold text-sky-600">Post</span>
+                  <span className="font-semibold text-sky-600 pointer">Post</span>
                 </div>
               </div>
             </div>
