@@ -42,7 +42,7 @@ const igScreenImages: IIgScreenImage[] = [
   },
 ];
 
-const index = () => {
+const Login = () => {
   const [igScreens, setIgScreens] = useState<IIgScreenImage[]>(igScreenImages);
   const [activeItem, setActiveItem] = useState<number>(0);
   useEffect(() => {
@@ -122,7 +122,7 @@ const index = () => {
           <div className="border-solid border border-zinc-300 flex flex-col items-center py-2.5">
             <div>
               <p className="text-sm m-4">
-                Don't have an account?
+                Don&apos;t have an account?
                 <span className="font-semibold text-sky-500 hover:cursor-pointer pl-1.5">
                   Sign up
                 </span>
@@ -170,4 +170,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Login;

@@ -7,7 +7,7 @@ interface HeaderProps {}
 const Header = () => {
   const avtSrc = '/assets/avatars/thuy-tien-avt.jpeg';
   return (
-    <div className="h-[60px] w-full border flex flex-col items-center justify-center fixed top-0 bg-white">
+    <div className="h-[60px] w-full border flex flex-col items-center justify-center fixed top-0 bg-white z-10">
       <div className="flex max-w-[980px] w-full">
         <div className="flex-[1_0_127px]">
           <div className="mt-2">

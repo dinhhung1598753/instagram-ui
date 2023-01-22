@@ -5,7 +5,12 @@ const initialState: Post[] = [
   {
     id: 1,
     title: 'thank @dottie.store for this pretty gift, a stunning dress ✨',
-    image: '/assets/posts/thuy-tien-1.jpeg',
+    images: [
+      '/assets/posts/thuytien-post-1.jpeg',
+      '/assets/posts/thuytien-post-2.jpeg',
+      '/assets/posts/thuytien-post-3.jpeg',
+      '/assets/posts/thuytien-post-4.jpeg',
+    ],
     location: 'Bangkok',
     author: {
       id: 1,
@@ -19,7 +24,7 @@ const initialState: Post[] = [
   {
     id: 2,
     title: 'thank @dottie.store for this pretty gift, a stunning dress ✨',
-    image: '/assets/posts/thuy-tien-1.jpeg',
+    images: ['/assets/posts/thuy-tien-1.jpeg'],
     location: 'Bangkok',
     author: {
       id: 1,

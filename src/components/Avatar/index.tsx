@@ -1,4 +1,3 @@
-import classnames from 'classnames';
 import Image from 'next/image';
 interface AvatarProps {
   src: string;
