@@ -2,13 +2,11 @@ import Image from 'next/image';
 import Search from './search';
 import { Avatar } from '@/components';
 
-interface HeaderProps {}
-
 const Header = () => {
-  const avtSrc = '/assets/avatars/thuy-tien-avt.jpeg';
+  const avtSrc = '/assets/avatars/me.jpg';
   return (
     <div className="h-[60px] w-full border flex flex-col items-center justify-center fixed top-0 bg-white z-10">
-      <div className="flex max-w-[980px] w-full">
+      <div className="flex max-w-[900px] w-full">
         <div className="flex-[1_0_127px]">
           <div className="mt-2">
             <Image

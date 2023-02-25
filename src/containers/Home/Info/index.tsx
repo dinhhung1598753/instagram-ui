@@ -1,7 +1,19 @@
 import { Avatar } from '@/components';
 
-const Info = () => {
-  const avtSrc = '/assets/avatars/thuy-tien-avt.jpeg';
+type Suggestion = {
+  id: number;
+  name: string;
+  avatarPath: string;
+  content: string;
+};
+
+interface IProps {
+  suggestions: Suggestion[];
+}
+
+const Info = (props: IProps) => {
+  const avtSrc = '/assets/avatars/me.jpg';
+  const suggestions = props.suggestions;
   return (
     <div className="pt-20 w-80">
       <div className="my-2">
@@ -21,46 +33,19 @@ const Info = () => {
         </div>
         <div>
           <div className="flex flex-col">
-            <div className="w-full py-2">
-              <div className="flex items-center w-full">
-                <Avatar src={avtSrc} alt="avt" size={32} />
-                <div className="grow ml-2">
-                  <div className="font-medium text-sm">js.20.12</div>
-                  <div className="text-gray-400 text-xs">Followed by klynzii + 1 more</div>
+            {suggestions &&
+              suggestions.map((suggestion) => (
+                <div className="w-full py-2" key={suggestion.id}>
+                  <div className="flex items-center w-full">
+                    <Avatar src={suggestion.avatarPath} alt="avt" size={32} />
+                    <div className="grow ml-2">
+                      <div className="font-medium text-sm">{suggestion.name}</div>
+                      <div className="text-gray-400 text-xs">{suggestion.content}</div>
+                    </div>
+                    <div className="text-sky-600 font-semibold text-xs">Follow</div>
+                  </div>
                 </div>
-                <div className="text-sky-600 font-semibold text-xs">Follow</div>
-              </div>
-            </div>
-            <div className="w-full py-2">
-              <div className="flex items-center w-full">
-                <Avatar src={avtSrc} alt="avt" size={32} />
-                <div className="grow ml-2">
-                  <div className="font-medium text-sm">js.20.12</div>
-                  <div className="text-gray-400 text-xs">Followed by klynzii + 1 more</div>
-                </div>
-                <div className="text-sky-600 font-semibold text-xs">Follow</div>
-              </div>
-            </div>
-            <div className="w-full py-2">
-              <div className="flex items-center w-full">
-                <Avatar src={avtSrc} alt="avt" size={32} />
-                <div className="grow ml-2">
-                  <div className="font-medium text-sm">js.20.12</div>
-                  <div className="text-gray-400 text-xs">Followed by klynzii + 1 more</div>
-                </div>
-                <div className="text-sky-600 font-semibold text-xs">Follow</div>
-              </div>
-            </div>
-            <div className="w-full py-2">
-              <div className="flex items-center w-full">
-                <Avatar src={avtSrc} alt="avt" size={32} />
-                <div className="grow ml-2">
-                  <div className="font-medium text-sm">js.20.12</div>
-                  <div className="text-gray-400 text-xs">Followed by klynzii + 1 more</div>
-                </div>
-                <div className="text-sky-600 font-semibold text-xs">Follow</div>
-              </div>
-            </div>
+              ))}
           </div>
         </div>
       </div>

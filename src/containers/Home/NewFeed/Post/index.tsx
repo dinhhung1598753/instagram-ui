@@ -26,8 +26,19 @@ const Post = (props: Post) => {
       return pre;
     });
   };
+  const formatNumber = (number: number) =>
+    new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(number);
+
+  const getTime = (timePublish: number): String => {
+    if (!timePublish) return 'Now';
+    const time = Math.round((new Date().getTime() - timePublish) / 1000);
+    if (time < 60) return `${time} seconds ago`;
+    else if (time >= 60 && time / 60 < 60) return `${Math.round(time / 60)} minutes ago`;
+    else if (time / 60 >= 60 && time / 3600 < 24) return `${Math.round(time / 3600)} hours ago`;
+    else return `${Math.round(time / (2600 * 24))} days ago`;
+  };
   return (
-    <div className="w-[472px] border rounded-md">
+    <div className="w-[470px] border rounded-md">
       <div className="w-full h-[56px] flex justify-between">
         <div className="flex items-center ml-3">
           <div className="pointer">
@@ -55,7 +66,7 @@ const Post = (props: Post) => {
       </div>
       <div>
         <div className="relative flex overflow-x-hidden">
-          <img src={imageSrc} alt="post" />
+          <img src={imageSrc} alt="post" className="w-full" />
           <div className="absolute w-full h-full">
             <div
               className={classnames(
@@ -141,7 +152,7 @@ const Post = (props: Post) => {
           </div>
 
           <div className="px-2 pb-2">
-            <span className="text-sm font-semibold"> 100 likes</span>
+            <span className="text-sm font-semibold"> {formatNumber(props.likeCount)} likes</span>
           </div>
           <div className="px-2">
             <div className="flex flex-col">
@@ -153,7 +164,7 @@ const Post = (props: Post) => {
           </div>
           <div className="px-2">
             <div className="text-sm">
-              <span className="text-gray-400"> 5 hours ago </span>
+              <span className="text-gray-400"> {getTime(props.publishedAt)} </span>
             </div>
           </div>
           <div className="mt-2">
