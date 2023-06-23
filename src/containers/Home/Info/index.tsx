@@ -12,7 +12,7 @@ interface IProps {
 }
 
 const Info = (props: IProps) => {
-  const avtSrc = '/assets/avatars/me.jpg';
+  const avtSrc = '/assets/avatars/avt.jpeg';
   const suggestions = props.suggestions;
   return (
     <div className="pt-20 w-80">

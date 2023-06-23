@@ -3,7 +3,7 @@ import Search from './search';
 import { Avatar } from '@/components';
 
 const Header = () => {
-  const avtSrc = '/assets/avatars/me.jpg';
+  const avtSrc = '/assets/avatars/avt.jpeg';
   return (
     <div className="h-[60px] w-full border flex flex-col items-center justify-center fixed top-0 bg-white z-10">
       <div className="flex max-w-[900px] w-full">
