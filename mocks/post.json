@@ -3,16 +3,16 @@
     "id": 1,
     "title": "thank @dottie.store for this pretty gift, a stunning dress ✨",
     "images": [
-      "/assets/posts/thuytien-post-1.jpeg",
-      "/assets/posts/thuytien-post-2.jpeg",
-      "/assets/posts/thuytien-post-3.jpeg",
-      "/assets/posts/thuytien-post-4.jpeg"
+      "/instagram-ui/assets/posts/thuytien-post-1.jpeg",
+      "/instagram-ui/assets/posts/thuytien-post-2.jpeg",
+      "/instagram-ui/assets/posts/thuytien-post-3.jpeg",
+      "/instagram-ui/assets/posts/thuytien-post-4.jpeg"
     ],
     "location": "Bangkok",
     "author": {
       "id": 1,
       "name": "tienng12",
-      "avatar": "/assets/avatars/thuy-tien-avt.jpeg",
+      "avatar": "/instagram-ui/assets/avatars/thuy-tien-avt.jpeg",
       "hasStory": true
     },
     "likeCount": 100,
@@ -22,18 +22,18 @@
     "id": 2,
     "title": " @voguefrance @dior 🌹",
     "images": [
-      "/assets/posts/jiso1.jpg",
-      "/assets/posts/jiso2.jpg",
-      "/assets/posts/jiso3.jpg",
-      "/assets/posts/jiso4.jpg",
-      "/assets/posts/jiso5.jpg",
-      "/assets/posts/jiso6.jpg"
+      "/instagram-ui/assets/posts/jiso1.jpg",
+      "/instagram-ui/assets/posts/jiso2.jpg",
+      "/instagram-ui/assets/posts/jiso3.jpg",
+      "/instagram-ui/assets/posts/jiso4.jpg",
+      "/instagram-ui/assets/posts/jiso5.jpg",
+      "/instagram-ui/assets/posts/jiso6.jpg"
     ],
     "location": "",
     "author": {
       "id": 1,
       "name": "sooyaaa__",
-      "avatar": "/assets/avatars/jiso.jpg",
+      "avatar": "/instagram-ui/assets/avatars/jiso.jpg",
       "hasStory": true
     },
     "likeCount": 4878296,
@@ -42,12 +42,12 @@
   {
     "id": 3,
     "title": "thank @dottie.store for this pretty gift, a stunning dress ✨",
-    "images": ["/assets/posts/thuy-tien-1.jpeg"],
+    "images": ["/instagram-ui/assets/posts/thuy-tien-1.jpeg"],
     "location": "Bangkok",
     "author": {
       "id": 1,
       "name": "tienng12",
-      "avatar": "/assets/avatars/thuy-tien-avt.jpeg",
+      "avatar": "/instagram-ui/assets/avatars/thuy-tien-avt.jpeg",
       "hasStory": true
     },
     "likeCount": 1000,
@@ -57,18 +57,18 @@
     "id": 4,
     "title": " Made it! /n Khi bạn thực sự yêu thích điều gì đó, bạn sẽ làm nó đến cùng, làm đến bao giờ bản thân tự cảm thấy thoả mãn, tự thấy đã thì thôi!! Đãaaaaa🥹🫶🏻 /n Bạn có thấy giống Châu không ạ?🌈",
     "images": [
-      "/assets/posts/chaubui1.jpg",
-      "/assets/posts/chaubui2.jpg",
-      "/assets/posts/chaubui3.jpg",
-      "/assets/posts/chaubui4.jpg",
-      "/assets/posts/chaubui5.jpg",
-      "/assets/posts/chaubui6.jpg"
+      "/instagram-ui/assets/posts/chaubui1.jpg",
+      "/instagram-ui/assets/posts/chaubui2.jpg",
+      "/instagram-ui/assets/posts/chaubui3.jpg",
+      "/instagram-ui/assets/posts/chaubui4.jpg",
+      "/instagram-ui/assets/posts/chaubui5.jpg",
+      "/instagram-ui/assets/posts/chaubui6.jpg"
     ],
     "location": "Milan, Italy",
     "author": {
       "id": 10,
       "name": "chaubui_",
-      "avatar": "/assets/avatars/chaubui.jpg",
+      "avatar": "/instagram-ui/assets/avatars/chaubui.jpg",
       "hasStory": true
     },
     "likeCount": 9651,

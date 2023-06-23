@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link
-          data-default-icon="/assets/icons/home.svg"
+          data-default-icon="/instagram-ui/assets/icons/home.svg"
           rel="icon"
           sizes="192x192"
           href="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png"

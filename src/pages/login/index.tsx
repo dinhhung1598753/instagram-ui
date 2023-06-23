@@ -103,7 +103,7 @@ const Login = () => {
               </div>
               <div className="flex justify-center hover:cursor-pointer">
                 <Image
-                  src="/assets/icons/square-facebook.svg"
+                  src="/instagram-ui/assets/icons/square-facebook.svg"
                   alt="facebook"
                   width="15"
                   height="15"
@@ -136,13 +136,13 @@ const Login = () => {
             </div>
             <div className="flex justify-center space-x-2 my-2.5">
               <Image
-                src="/assets/images/app-store.png"
+                src="/instagram-ui/assets/images/app-store.png"
                 width="135"
                 height="40"
                 alt="app-store-logo"
               />
               <Image
-                src="/assets/images/ch-play.png"
+                src="/instagram-ui/assets/images/ch-play.png"
                 width="135"
                 height="40"
                 alt="app-store-logo"
