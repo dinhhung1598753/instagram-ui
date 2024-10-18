@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Instagram</title>
+        <title>Instagram Develop</title>
       </Head>
       <Header />
       <div className="flex justify-center mt-20 mb-5">
