@@ -16,6 +16,7 @@ const Header = () => {
               alt="instagram-logo"
               className="pointer"
             />
+            Instagram test
           </div>
         </div>
         <div className="w-72 h-9 flex-initial">
